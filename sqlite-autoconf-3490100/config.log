@@ -1,0 +1,90 @@
+Invoked as: ./configure --prefix=/home/ad.rapidops.com/yash.dubey/local
+Tclsh: /home/ad.rapidops.com/yash.dubey/Desktop/scan-eat/RAG-generator/sqlite-autoconf-3490100/jimsh0
+Failed: cc conftest__.c -o conftest__
+/usr/bin/ld: /tmp/cc30qg30.o: in function `main':
+conftest__.c:(.text+0x9): undefined reference to `localtime_s'
+collect2: error: ld returned 1 exit status
+============
+The failed code was:
+extern void localtime_s(void);
+int main(void) {
+localtime_s();
+return 0;
+}
+============
+Failed: cc -c conftest__.c -o conftest__.o
+conftest__.c:1:10: fatal error: zlib.h: No such file or directory
+    1 | #include <zlib.h>
+      |          ^~~~~~~~
+compilation terminated.
+============
+The failed code was:
+#include <zlib.h>
+int main(void) {
+
+return 0;
+}
+============
+Failed: cc -c -rpath /home/ad.rapidops.com/yash.dubey/local/lib conftest__.c -o conftest__.o
+cc: error: unrecognized command line option ‘-rpath’
+============
+The failed code was:
+int main(void) {
+
+return 0;
+}
+============
+Failed: cc -O2 -g conftest__.c -o conftest__
+/usr/bin/ld: /tmp/ccPOnQ9x.o: in function `main':
+/home/ad.rapidops.com/yash.dubey/Desktop/scan-eat/RAG-generator/sqlite-autoconf-3490100/conftest__.c:3: undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+============
+The failed code was:
+extern void pthread_create(void);
+int main(void) {
+pthread_create();
+return 0;
+}
+============
+Failed: cc -O2 -g conftest__.c -o conftest__
+/usr/bin/ld: /tmp/ccsV88Dm.o: in function `main':
+/home/ad.rapidops.com/yash.dubey/Desktop/scan-eat/RAG-generator/sqlite-autoconf-3490100/conftest__.c:3: undefined reference to `pthread_mutexattr_init'
+collect2: error: ld returned 1 exit status
+============
+The failed code was:
+extern void pthread_mutexattr_init(void);
+int main(void) {
+pthread_mutexattr_init();
+return 0;
+}
+============
+Failed: cc -O2 -g conftest__.c -o conftest__
+/usr/bin/ld: /tmp/ccXyYNmp.o: in function `main':
+/home/ad.rapidops.com/yash.dubey/Desktop/scan-eat/RAG-generator/sqlite-autoconf-3490100/conftest__.c:3: undefined reference to `dlopen'
+collect2: error: ld returned 1 exit status
+============
+The failed code was:
+extern void dlopen(void);
+int main(void) {
+dlopen();
+return 0;
+}
+============
+Failed: cc -O2 -g conftest__.c -o conftest__
+conftest__.c:1:13: warning: conflicting types for built-in function ‘ceil’; expected ‘double(double)’ [-Wbuiltin-declaration-mismatch]
+    1 | extern void ceil(void);
+      |             ^~~~
+conftest__.c:1:1: note: ‘ceil’ is declared in header ‘<math.h>’
+  +++ |+#include <math.h>
+    1 | extern void ceil(void);
+/usr/bin/ld: /tmp/cc4f6QT7.o: in function `main':
+/home/ad.rapidops.com/yash.dubey/Desktop/scan-eat/RAG-generator/sqlite-autoconf-3490100/conftest__.c:3: undefined reference to `ceil'
+collect2: error: ld returned 1 exit status
+============
+The failed code was:
+extern void ceil(void);
+int main(void) {
+ceil();
+return 0;
+}
+============

@@ -1,0 +1,5 @@
+/__pycache__
+/.venv
+/libffi-3.4.2
+/qdrant_storage
+/sqlite-autoconf-3490100
